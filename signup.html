@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SignUpPage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="keywords" content="weather,world,Openstreetmap,forecast, Openweather,current">
+    <meta name="description" content="">
+    <meta name="author" content="OpenWeatherMap.org">
+    <meta name="domain" content="OpenWeatherMap.org">
+    <meta http-equiv="pragma" content="no=cache">
+    <meta http-equiv="Expires" content="=1">
+    <meta name="p!domain_varify" content="34fe229eabB562dca90f4a5962ff80a9"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+  </head>
+
+<body style="margin-bottom: 90px;">
+    <div class="header">
+      <img src="img/upLog.png" alt="EVEV title" style="width: 100%; height: 100px;" >
+      <a href="index.php"><button class="btn" style="background:none; width: 320px; height:80px; border: 0; margin-top: -80px;"></button></a>
+    </div>
+
+  <div >
+    <div class="MyPageTitle" width="100%" style="text-align:center">
+      <h1>Sign Up EVEV Account</h1>
+      </div>
+  </div>
+
+  <form method="post" action="signUpSystem.php">
+    <hr style="border-width: 5px;" color="#990000;">
+    <div>
+        <div class="container-fluid" style=" padding-left: 20%" id="inputField">
+            <div class="row">
+               <div class="col-md-3" ><h3>User Name:</h3></div>
+               <div class="col-md-4"><input name="username" type="text" class="input" id="userName" placeholder="user name" required></input></div>
+            </div>
+            <br>
+            <div class="row">
+               <div class="col-md-3" ><h3>Name:</h3></div>
+               <div class="col-md-4"><input name="firstname" type="text" class="input" id="FirstName" placeholder="First Name" required></input></div>
+               <div class="col-md-4"><input name="lastname" type="text" class="input" id="LastName" placeholder="Last Name" required></input></div>
+            </div>
+             <br>
+
+             <div class="row">
+              <div class="col-md-3" ><h3>Email:</h3></div>
+              <div class="col-md-9"> <input size="50" name="email" type="email" class="input" id="Email"  placeholder="xxxx@xxx.com" required></input></div>
+             </div>
+
+             <br>
+
+              <div class="row">
+               <div class="col-md-3" ><h3>Password:</h3></div>
+               <div class="col-md-9"> <input size="50" name="password" minlength="8" type="password" class="input" id="password"  placeholder="******************" required></input></div>
+             </div>
+
+        </div>
+    </div>
+
+    <div class="row" style="margin-top:3%;">
+      <div class="col-3">
+        <a href="index.php"><button type="button" class="btn btn-danger" style="margin-left: 100px;">Cancel</button>
+        </a>
+      </div>
+      <div class="col-6"></div>
+      <div class="col-3">
+        <button id="signup" name="signup" type="submit" class="btn btn-success" style="margin-top:1%; margin-right:1%;" >Sign Up
+        </button>
+      </div>
+    </div>
+
+  </form>
+
+  </body>
+</html>
